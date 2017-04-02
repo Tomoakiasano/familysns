@@ -1,0 +1,225 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*----------------------------------reset css-----------------------------------*/
+
+#wrapper{
+	margin: 0 auto;
+	padding: 0 0 0 0;
+}
+
+header{
+	width: auto;
+	height: 80px;
+	border-bottom: 1px solid #e9b423;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.logo{
+	width: 285px;
+	float: left;
+}
+
+nav{
+	width: 960px;
+	height: 80px;
+	margin: 10px auto 0;
+	padding: 0;
+}
+
+nav ul{
+	width: 960px;
+}
+
+nav li{
+	width: 160px;
+	float: right;
+	padding-top: 25px;
+	
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+
+.login_box{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	padding: 50px 0px 0px 320px;
+}
+
+.login_box h2{
+	font-size: 30px;
+	color: #777777;
+	letter-spacing: 5px;
+	font-family: 'Century';
+	margin: 0 0 36px -32px;
+}
+
+.label_a{
+	font-size: 20px;
+}
+
+.form{
+	width: 250px;
+	height: 20px;
+	margin: 10px auto 20px;
+}
+
+.login_btn{
+    background: #e9b423 none repeat scroll 0 0;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    height: 45px;
+    margin-top: 25px;
+    width: 260px;
+}
+
+footer{
+	width: auto;
+	height: 100px;
+	border-top: 1px solid #e9b423;
+	margin: 0 auto;
+	padding: 0;
+	background: #eeeeee;
+}
+
+footer nav{
+	width: 960px;
+	height: 80px;
+	margin: 10px auto 0;
+	padding: 0;
+}
+
+.footer_box{
+	width: 960px;
+	margin: 10px auto;
+}
+
+footer p{
+	float: right;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.clearfix:after {
+  content: ".";  /* 新しいコンテンツ */
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; /* 非表示に */
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}

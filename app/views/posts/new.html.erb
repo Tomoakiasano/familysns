@@ -1,0 +1,21 @@
+<% if user_signed_in? %>
+  <strong><%= link_to current_user.name ,user_path(current_user.id) %></strong>としてログインしています。
+<% end %>
+<h2>家族にメッセージを投稿しよう</h2>
+<%= form_for @post do |f| %>
+  <div class="field">
+    <%= f.label :title %><br/>
+    <%= f.text_field :title, autofocus: true %>
+  </div>
+  <div class="actions">
+    <%= f.submit "投稿する" %>
+  </div>
+
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+
+<% end %>
+
+<%= link_to '戻る', posts_path %>
+
+

@@ -1,0 +1,32 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.index{
+	width: 0;
+	min-width: 300px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.index h2{
+	font-size: 24px;
+	color: #e9b423;
+	letter-spacing: 5px;
+	font-family: 'Century';
+	margin: 0 0 20px 0;
+}
+
+.user_name{
+		margin-bottom: 20px;
+}
+
+.user_posts{
+	width: auto;
+	padding: 10px;
+	margin:10px auto 10px;
+	font-size: 20px;
+}
+

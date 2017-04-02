@@ -1,0 +1,51 @@
+<div id="wrapper">
+    <header>
+      <nav>
+        <div class="logo"><%= image_tag 'logo.png' %></div>
+        <div class="clearfix">
+          <ul>
+            <li><%= link_to "新規登録はこちらから", new_user_registration_path %></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="login_box">
+        <h2>家族とつながるSNS</h2>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.label :name, class: 'label_a' %><br />
+            <%= f.text_field :name, autofocus: true, class: 'form' %>
+          </div>
+          <!--   <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: "off" %>
+          </div> -->
+
+          <div class="field">
+            <%= f.label :password, class: 'label_a' %><br />
+            <%= f.password_field :password, autocomplete: "off", class: 'form' %>
+          </div>
+
+          <% if devise_mapping.rememberable? -%>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+            </div>
+          <% end -%>
+
+          <div class="actions">
+            <%= f.submit "ログイン", class: 'login_btn' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_box clearfix">
+        <div class="logo"><%= image_tag 'logo.png' %></div>
+        <p>Copyright FSNS all rights reserved.</p>
+      </div>
+    </footer>
+</div>
+
+

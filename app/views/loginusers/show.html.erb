@@ -1,0 +1,15 @@
+<h2>投稿内容</h2>
+<% if @posts != nil %>
+<% @posts.each do |post| %>
+	<p><%= post.title %></p>
+
+<% if current_user.id == post.user_id %>
+<% end %>
+
+    
+
+<%= link_to "編集", edit_post_path(post.id), class: "btn edit-btn" %>
+<%= link_to "削除", destroy_post_path(post.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>
+<% end %>
+<% end %>
+<%= link_to 'Back', posts_path %>
